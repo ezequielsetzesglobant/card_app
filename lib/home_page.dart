@@ -58,29 +58,22 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(Constants.padding),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: Constants.paddingHorizontal,
+                  vertical: Constants.padding,
+                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        left: Constants.paddingLeft,
-                      ),
-                      child: Text(
-                        '$_likesCounter',
-                        style: TextStyles.likeTextStyle,
-                      ),
+                    Text(
+                      '$_likesCounter',
+                      style: TextStyles.likeTextStyle,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        right: Constants.paddingRight,
-                      ),
-                      child: IconButton(
-                        onPressed: _incrementLikes,
-                        icon: const Icon(Icons.thumb_up),
-                        color: Colors.green,
-                        iconSize: Constants.iconSize,
-                      ),
+                    IconButton(
+                      onPressed: _incrementLikes,
+                      icon: const Icon(Icons.thumb_up),
+                      color: Colors.green,
+                      iconSize: Constants.iconSize,
                     )
                   ],
                 ),
