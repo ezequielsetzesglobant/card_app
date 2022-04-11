@@ -12,6 +12,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _likesCounter = Constants.initializationValue;
 
+  _incrementLikes() {
+    setState(() {
+      _likesCounter++;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,11 +90,5 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
-  }
-
-  _incrementLikes() {
-    setState(() {
-      _likesCounter++;
-    });
   }
 }
