@@ -10,43 +10,44 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.amber,
       body: SafeArea(
-          child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Padding(
-              padding: EdgeInsets.all(Constants.padding),
-              child: CircleAvatar(
-                backgroundImage: AssetImage(
-                  Constants.avatarPath,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Padding(
+                padding: EdgeInsets.all(Constants.padding),
+                child: CircleAvatar(
+                  backgroundImage: AssetImage(
+                    Constants.avatarPath,
+                  ),
+                  radius: Constants.radiusAvatar,
                 ),
-                radius: Constants.radiusAvatar,
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(Constants.padding),
-              child: Text(
-                Constants.name,
-                style: TextStyles.nameTextStyle,
+              Padding(
+                padding: EdgeInsets.all(Constants.padding),
+                child: Text(
+                  Constants.name,
+                  style: TextStyles.nameTextStyle,
+                ),
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(Constants.padding),
-              child: Text(
-                Constants.job,
-                style: TextStyles.jobTextStyle,
+              Padding(
+                padding: EdgeInsets.all(Constants.padding),
+                child: Text(
+                  Constants.job,
+                  style: TextStyles.jobTextStyle,
+                ),
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(Constants.padding),
-              child: Text(
-                Constants.mail,
-                style: TextStyles.mailTextStyle,
+              Padding(
+                padding: EdgeInsets.all(Constants.padding),
+                child: Text(
+                  Constants.mail,
+                  style: TextStyles.mailTextStyle,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
-      )),
+      ),
     );
   }
 }
