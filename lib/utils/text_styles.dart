@@ -14,4 +14,8 @@ class TextStyles {
     fontSize: Constants.mailFontSize,
     color: Colors.blue,
   );
+  static const TextStyle likeTextStyle = TextStyle(
+    fontSize: Constants.likeFontSize,
+    color: Colors.green,
+  );
 }

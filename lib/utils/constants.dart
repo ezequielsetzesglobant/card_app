@@ -4,6 +4,11 @@ class Constants {
   static const double jobFontSize = 25.0;
   static const double mailFontSize = 20.0;
   static const double radiusAvatar = 100.0;
+  static const double likeFontSize = 50.0;
+  static const double iconSize = 50.0;
+  static const int initializationValue = 0;
+  static const double paddingLeft = 70.0;
+  static const double paddingRight = 70.0;
   static const String avatarPath = 'assets/images/avatar.png';
   static const String name = 'Ezequiel Hernan Setzes';
   static const String job = 'Flutter Mobile Developer';
