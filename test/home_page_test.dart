@@ -11,6 +11,7 @@ void main() {
 
       expect(find.byType(CircleAvatar), findsOneWidget);
       expect(find.byType(Text), findsNWidgets(4));
+      expect(find.byType(IconButton), findsOneWidget);
       expect(
           find.descendant(
             of: find.byType(Scaffold),
@@ -23,9 +24,16 @@ void main() {
             matching: find.byType(Text),
           ),
           findsNWidgets(4));
+      expect(
+          find.descendant(
+            of: find.byType(Scaffold),
+            matching: find.byType(IconButton),
+          ),
+          findsOneWidget);
       expect(find.text('Ezequiel Hernan Setzes'), findsOneWidget);
       expect(find.text('Flutter Mobile Developer'), findsOneWidget);
       expect(find.text('ezequielsetzes1904@gmail.com'), findsOneWidget);
+      expect(find.text('0'), findsOneWidget);
     });
 
     testWidgets('Like increments counter test', (WidgetTester tester) async {
